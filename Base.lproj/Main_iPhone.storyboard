@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="pyr-4d-sdD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="568" id="DGo-hV-bMg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="F7b-q5-qlO"/>
+                                    <constraint firstAttribute="height" constant="568" id="Ixb-gD-rfj"/>
+                                    <constraint firstAttribute="width" constant="320" id="dew-7H-1Rl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="HQf-BT-Wd1">
+                                <rect key="frame" x="20" y="190" width="280" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QbB-nM-fsK"/>
+                                    <constraint firstAttribute="width" secondItem="HQf-BT-Wd1" secondAttribute="height" multiplier="28:15" id="WAL-gf-w9j"/>
+                                    <constraint firstAttribute="width" constant="280" id="jGL-hd-MK8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="It is decidedly so">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="32" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pyr-4d-sdD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="01x-pq-YoE"/>
+                            <constraint firstItem="HQf-BT-Wd1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="40p-RQ-YYi"/>
+                            <constraint firstItem="pyr-4d-sdD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="L10-WE-uS5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pyr-4d-sdD" secondAttribute="bottom" id="R3i-Hm-aEc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HQf-BT-Wd1" secondAttribute="bottom" constant="228" id="aQs-MI-yoz"/>
+                            <constraint firstItem="pyr-4d-sdD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="jEA-9W-CAe"/>
+                            <constraint firstAttribute="trailing" secondItem="pyr-4d-sdD" secondAttribute="trailing" id="kE3-ix-Oby"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pyr-4d-sdD" secondAttribute="bottom" id="kgi-Ks-FoK"/>
+                            <constraint firstItem="HQf-BT-Wd1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="170" id="qy9-Xe-MYF"/>
+                            <constraint firstAttribute="trailing" secondItem="HQf-BT-Wd1" secondAttribute="trailing" constant="20" id="raD-8p-zsG"/>
+                            <constraint firstAttribute="trailing" secondItem="pyr-4d-sdD" secondAttribute="trailing" id="uw2-Xx-sVs"/>
+                            <constraint firstItem="pyr-4d-sdD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="v9o-5B-r3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="pyr-4d-sdD" id="GzS-tm-guQ"/>
+                        <outlet property="predictionLabel" destination="HQf-BT-Wd1" id="nwa-w8-546"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
